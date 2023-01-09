@@ -18,3 +18,40 @@ cnt2+cnt3<=cnt1 先手必胜：保证了先手再后手还在染cnt1的时候，
 cnt1+cnt3<cnt2  后者必胜：与上面同理
 为何不能取到等号:cnt1+cnt3代表的是后手,如果取到等号了,则在某一轮中在后手之前先手已经把cnt2涂完了,而之后后手就无法再涂,因为此时两个人都相当于只涂了cnt1+cnt3-1和cnt2+cnt3-1,都不愿意再图,这就导致了平局.
 除了cnt2+cnt3<=cnt1和cnt1+cnt3<cnt2,其他情况全为平局.
+
+解决方案如下:
+C++
+'''
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        int cnt1=0,cnt2=0,cnt3=0;
+        //player1不需要涂色的,player2不需要涂色的
+        for(int i=1,temp;i<=n;i++)
+        {
+            cin >> temp;
+            if(temp==i)
+                cnt1++;
+            else if(temp==n+1-i)
+                cnt2++;
+            else
+                cnt3++;
+        }
+        if(cnt2+cnt3<=cnt1)
+            cout << "First" << endl;
+        else if(cnt1+cnt3<cnt2)
+            cout << "Second" << endl;
+        else
+            cout << "Tie" << endl;
+    } 
+    return 0;
+}
+'''
