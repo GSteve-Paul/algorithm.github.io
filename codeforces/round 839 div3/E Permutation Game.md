@@ -21,7 +21,7 @@ cnt1+cnt3<cnt2  后者必胜：与上面同理
 
 解决方案如下:
 C++
-'''
+```
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -54,4 +54,4 @@ int main()
     } 
     return 0;
 }
-'''
+```
