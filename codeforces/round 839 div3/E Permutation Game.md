@@ -28,8 +28,7 @@ cnt1+cnt3<cnt2  后者必胜：与上面同理
 除了cnt2+cnt3<=cnt1和cnt1+cnt3<cnt2,其他情况全为平局.
 
 解决方案如下:
-C++
-```
+```C++
 #include <bits/stdc++.h>
 using namespace std;
 int main()
