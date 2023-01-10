@@ -24,11 +24,8 @@
 3).按照排序后的顺序,以特殊点的反转为operation1的依据,以图片的数量为operation2的依据,循环遍历得出答案
 
 代码:
-C++
-```
-#include <algorithm>
-#include <queue>
-#include <cstdio>
+```C++
+#include <bits/stdc++.h>
 #define N 35
 #define M 35
 #define K 105
