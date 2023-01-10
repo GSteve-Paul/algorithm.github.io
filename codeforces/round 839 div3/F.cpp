@@ -1,6 +1,4 @@
-#include <algorithm>
-#include <queue>
-#include <cstdio>
+#include <bits/stdc++.h>
 #define N 35
 #define M 35
 #define K 105
