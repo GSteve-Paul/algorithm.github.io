@@ -54,9 +54,14 @@ delta*k0+x+i >= y
 
 因此计算出k,k0后,我们应当比较k和k0的大小.
 
-如果k0<=k,那么asw+=k0*n x+=delta*k0 asw+=y-x,然后直接结束
+如果k0<=k,那么
+asw+=k0*n 
+x+=delta*k0 
+asw+=y-x,然后直接结束
 
-如果k0>k,那么asw+=k*n x+=delta*k,继续循环
+如果k0>k,那么
+asw+=k*n 
+x+=delta*k,继续循环
 
 这个地方的=不严格属于<=,换成>=也是一样的,无非是多一次循环下一次的特殊情况1
 
